@@ -9,14 +9,14 @@
     if (!nav || !toggle) return;
     nav.classList.remove("is-open");
     toggle.setAttribute("aria-expanded", "false");
-    if (toggleLabel) toggleLabel.textContent = "Abrir men\u00fa";
+    if (toggleLabel) toggleLabel.textContent = "Abrir menú";
   }
 
   if (toggle && nav) {
     toggle.addEventListener("click", function () {
       const open = nav.classList.toggle("is-open");
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
-      if (toggleLabel) toggleLabel.textContent = open ? "Cerrar men\u00fa" : "Abrir men\u00fa";
+      if (toggleLabel) toggleLabel.textContent = open ? "Cerrar menú" : "Abrir menú";
     });
 
     nav.addEventListener("click", function (event) {
@@ -65,10 +65,12 @@
   });
 
   document.querySelectorAll("[data-watch]").forEach(function (img) {
-    const embedded = img.getAttribute("data-watch") === "light"
-      ? window.TIMEFIT_WATCH_LIGHT
-      : window.TIMEFIT_WATCH_DARK;
+    const light = img.getAttribute("data-watch") === "light";
+    const embedded = light ? window.TIMEFIT_WATCH_LIGHT : window.TIMEFIT_WATCH_DARK;
     if (embedded) img.src = embedded;
+    if (!light && window.TIMEFIT_WATCH_MASK) {
+      img.style.setProperty("--watch-mask", "url(\"" + window.TIMEFIT_WATCH_MASK + "\")");
+    }
   });
 
   const socials = config.socials || {};
