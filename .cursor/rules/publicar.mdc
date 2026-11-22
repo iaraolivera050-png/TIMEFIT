@@ -1,0 +1,10 @@
+---
+description: Subir la tienda a GitHub al terminar un cambio, sin esperar un pedido aparte
+alwaysApply: true
+---
+
+# Publicar al terminar
+
+Cuando un cambio de la tienda TIMEFIT queda listo, subilo a `main` de `iaraolivera050-png/TIMEFIT` sin esperar que lo pidan.
+
+Git en esta PC entra como Lucaass89 y no tiene permiso de escritura. Para archivos de texto usá la conexión de GitHub de Cursor, con la cuenta iaraolivera050-png. No cambies la configuración de Git y no hagas force push.

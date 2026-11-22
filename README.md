@@ -18,5 +18,6 @@ Garantía, envío y medio de pago siguen como «A confirmar» en la página. Hay
 
 Lista en `assets/images/`:
 
-- `hero-escritorio.jpg`: recorte de la pieza de la campaña (reloj, computadora y celular). Es la imagen del inicio y de la ficha.
+- `reloj-llamada.png`: foto del smartwatch en el inicio y en la ficha.
+- `hero-escritorio.jpg`: recorte de la pieza de la campaña. Ya no es la imagen principal.
 - Faltan, y por eso se ven marcos vacíos: frente del reloj, detalle del reloj, y las cuatro escenas de estilo de vida (trabajando, estudiando, organizando actividades y uso durante el día).
