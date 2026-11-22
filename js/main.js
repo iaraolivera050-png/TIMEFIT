@@ -77,6 +77,17 @@
     }
   });
 
+  const lifePhotos = {
+    work: window.TIMEFIT_LIFE_WORK,
+    study: window.TIMEFIT_LIFE_STUDY,
+    plan: window.TIMEFIT_LIFE_PLAN,
+    day: window.TIMEFIT_LIFE_DAY
+  };
+  document.querySelectorAll("[data-life]").forEach(function (img) {
+    const embedded = lifePhotos[img.getAttribute("data-life")];
+    if (embedded) img.src = embedded;
+  });
+
   const socials = config.socials || {};
   document.querySelectorAll("[data-social]").forEach(function (node) {
     const key = node.getAttribute("data-social");
