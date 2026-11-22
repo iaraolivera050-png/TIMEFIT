@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TIMEFIT — Tu día, más conectado y organizado</title>
   <meta name="description" content="TIMEFIT. Conectá con vos. Un reloj inteligente para organizar la rutina, consultar notificaciones y mantenerte al tanto de lo importante.">
-  <meta name="theme-color" content="#f6f3ee">
+  <meta name="theme-color" content="#070707">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,500;1,9..144,560&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,15 +13,26 @@
 </head>
 <body>
   <a class="skip" href="#inicio">Saltar al contenido</a>
+
   <header class="header">
     <div class="header-inner">
       <a class="brand" href="#inicio">
         <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 64 24" fill="none"><path d="M2 12h10l3.2-7.2L20 19l3.4-7H34" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg viewBox="0 0 64 24" fill="none">
+            <path d="M2 12h10l3.2-7.2L20 19l3.4-7H34" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </span>
-        <span class="brand-text"><span class="brand-name">TIMEFIT</span><span class="brand-slogan">Conectá con vos</span></span>
+        <span class="brand-text">
+          <span class="brand-name">TIMEFIT</span>
+          <span class="brand-slogan">Conectá con vos</span>
+        </span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navegacion"><span class="nav-toggle-lines" aria-hidden="true"></span><span class="visually-hidden">Abrir menú</span></button>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navegacion">
+        <span class="nav-toggle-lines" aria-hidden="true"></span>
+        <span class="visually-hidden">Abrir menú</span>
+      </button>
+
       <nav class="nav" id="navegacion" aria-label="Secciones">
         <a href="#producto">Producto</a>
         <a href="#beneficios">Beneficios</a>
@@ -32,21 +43,27 @@
       </nav>
     </div>
   </header>
+
   <main>
     <section class="hero" id="inicio">
-      <div class="wrap hero-grid">
+      <div class="hero-stage">
         <div class="hero-copy">
           <p class="kicker">Conectá con vos</p>
           <h1>Tu día, más conectado y organizado.</h1>
-          <p class="lede">Con TIMEFIT recibí tus notificaciones, consultá tu actividad y mantenete al tanto de lo importante. Tecnología que acompaña tu ritmo.</p>
+          <p class="lede">Tecnología que acompaña tu ritmo. Recibí tus notificaciones, consultá tu actividad y mantenete al tanto de lo importante.</p>
           <div class="actions">
             <a class="button" href="#producto">Descubrí TIMEFIT</a>
-            <a class="button button-secondary" data-whatsapp data-whatsapp-optional data-label-ready="Consultar por WhatsApp" hidden><span data-whatsapp-label>Consultar por WhatsApp</span></a>
+            <a class="button button-secondary" data-whatsapp data-whatsapp-optional data-label-ready="Consultar por WhatsApp" hidden>
+              <span data-whatsapp-label>Consultar por WhatsApp</span>
+            </a>
           </div>
         </div>
-        <figure class="hero-figure"><img src="assets/images/hero-escritorio.jpg" alt="Reloj TIMEFIT sobre un escritorio, junto a una computadora y un celular."></figure>
+        <figure class="hero-figure">
+          <img src="assets/images/reloj-llamada.png" alt="Smartwatch TIMEFIT con una llamada entrante en la pantalla.">
+        </figure>
       </div>
     </section>
+
     <section class="section" id="producto" aria-labelledby="titulo-producto">
       <div class="wrap">
         <p class="kicker">Producto</p>
@@ -54,16 +71,25 @@
         <div class="product">
           <div class="gallery">
             <figure class="gallery-main">
-              <img src="assets/images/hero-escritorio.jpg" alt="Reloj TIMEFIT en un escritorio de trabajo, junto a una notebook y un teléfono.">
-              <figcaption>Pieza de la campaña: el reloj en el escritorio.</figcaption>
+              <img src="assets/images/reloj-llamada.png" alt="Smartwatch TIMEFIT, de caja clara y malla negra, mostrando una llamada entrante.">
+              <figcaption>El smartwatch TIMEFIT, con una llamada entrante en pantalla.</figcaption>
             </figure>
             <div class="gallery-slots" aria-label="Fotos pendientes del producto">
-              <div class="slot" role="img" aria-label="Foto a confirmar: frente del reloj"><span>Foto a confirmar</span><small>Frente del reloj</small></div>
-              <div class="slot" role="img" aria-label="Foto a confirmar: detalle del reloj"><span>Foto a confirmar</span><small>Detalle del reloj</small></div>
+              <div class="slot" role="img" aria-label="Foto a confirmar: frente del reloj">
+                <span>Foto a confirmar</span>
+                <small>Frente del reloj</small>
+              </div>
+              <div class="slot" role="img" aria-label="Foto a confirmar: detalle del reloj">
+                <span>Foto a confirmar</span>
+                <small>Detalle del reloj</small>
+              </div>
             </div>
           </div>
+
           <div class="product-copy">
-            <p>TIMEFIT acompaña la rutina. Es una herramienta práctica para organizar mejor el día, consultar notificaciones y mantenerse conectado.</p>
+            <p>
+              TIMEFIT acompaña la rutina. Es una herramienta práctica para organizar mejor el día, consultar notificaciones y mantenerse conectado.
+            </p>
             <ul class="feature-list">
               <li>Registro de actividad</li>
               <li>Recepción de notificaciones</li>
@@ -71,84 +97,189 @@
               <li>Control de frecuencia cardíaca</li>
               <li>Batería de larga duración</li>
             </ul>
-            <p class="price"><span class="price-label">Precio</span><strong data-price>Precio a confirmar</strong></p>
+            <p class="price">
+              <span class="price-label">Precio</span>
+              <strong data-price>Precio a confirmar</strong>
+            </p>
             <p class="note">La compra se coordina por WhatsApp.</p>
-            <a class="button is-disabled" data-whatsapp data-label-ready="Conseguí el tuyo" aria-disabled="true" tabindex="-1"><span data-whatsapp-label>WhatsApp a confirmar</span></a>
+            <a class="button is-disabled" data-whatsapp data-label-ready="Conseguí el tuyo" aria-disabled="true" tabindex="-1">
+              <span data-whatsapp-label>WhatsApp a confirmar</span>
+            </a>
           </div>
         </div>
       </div>
     </section>
+
     <section class="section section-alt" id="beneficios" aria-labelledby="titulo-beneficios">
       <div class="wrap">
         <p class="kicker">Beneficios</p>
         <h2 id="titulo-beneficios">Para el día a día</h2>
         <ul class="benefits">
-          <li><span class="icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M8 18c2.2-4 4-5 8-5s5.8 1 8 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="16" cy="13" r="2" stroke="currentColor" stroke-width="1.5"/><path d="M6 22h20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span><h3>Mantenete conectado</h3><p>El reloj queda con vos durante la rutina, para no perder de vista lo importante.</p></li>
-          <li><span class="icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><rect x="7" y="8" width="18" height="14" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M12 25h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span><h3>Consultá tus notificaciones</h3><p>Recibí avisos y consultalos sin dejar de lado lo que estás haciendo.</p></li>
-          <li><span class="icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><rect x="7" y="8" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M7 13h18M12 6v4M20 6v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span><h3>Organizá tu rutina</h3><p>Una ayuda concreta para ordenar el día entre trabajo, estudio y otras actividades.</p></li>
-          <li><span class="icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M8 22V14M16 22V10M24 22v-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span><h3>Registrá tu actividad diaria</h3><p>Consultá la actividad del día y llevá un registro simple de tu ritmo.</p></li>
-          <li><span class="icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M6 16h4l2.5-5 3 10 2.5-5H26" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Consultá tu frecuencia cardíaca</h3><p>El control de la frecuencia cardíaca forma parte de las funciones del reloj.</p></li>
+          <li>
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="none"><path d="M8 18c2.2-4 4-5 8-5s5.8 1 8 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="16" cy="13" r="2" stroke="currentColor" stroke-width="1.5"/><path d="M6 22h20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Mantenete conectado</h3>
+            <p>El reloj queda con vos durante la rutina, para no perder de vista lo importante.</p>
+          </li>
+          <li>
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="none"><rect x="7" y="8" width="18" height="14" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M12 25h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Consultá tus notificaciones</h3>
+            <p>Recibí avisos y consultalos sin dejar de lado lo que estás haciendo.</p>
+          </li>
+          <li>
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="none"><rect x="7" y="8" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M7 13h18M12 6v4M20 6v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Organizá tu rutina</h3>
+            <p>Una ayuda concreta para ordenar el día entre trabajo, estudio y otras actividades.</p>
+          </li>
+          <li>
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="none"><path d="M8 22V14M16 22V10M24 22v-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Registrá tu actividad diaria</h3>
+            <p>Consultá la actividad del día y llevá un registro simple de tu ritmo.</p>
+          </li>
+          <li>
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="none"><path d="M6 16h4l2.5-5 3 10 2.5-5H26" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <h3>Consultá tu frecuencia cardíaca</h3>
+            <p>El control de la frecuencia cardíaca forma parte de las funciones del reloj.</p>
+          </li>
         </ul>
       </div>
     </section>
+
     <section class="section" id="estilo" aria-labelledby="titulo-estilo">
       <div class="wrap">
         <p class="kicker">Estilo de vida</p>
         <h2 id="titulo-estilo">El reloj en la rutina</h2>
         <p class="section-intro">Escenas cotidianas. Las fotos se van a sumar cuando estén definidas: hoy cada lugar indica qué imagen falta.</p>
         <div class="lifestyle">
-          <article><div class="slot slot-tall" role="img" aria-label="Foto a confirmar: una persona trabajando"><span>Foto a confirmar</span></div><h3>Trabajando</h3><p>Durante la jornada, el reloj queda a mano para ver notificaciones y seguir el día.</p></article>
-          <article><div class="slot slot-tall" role="img" aria-label="Foto a confirmar: una persona estudiando"><span>Foto a confirmar</span></div><h3>Estudiando</h3><p>Acompaña las horas de estudio para mantenerse al tanto de lo importante.</p></article>
-          <article><div class="slot slot-tall" role="img" aria-label="Foto a confirmar: una persona organizando sus actividades"><span>Foto a confirmar</span></div><h3>Organizando actividades</h3><p>Una forma práctica de ordenar la rutina y consultar la actividad del día.</p></article>
-          <article><div class="slot slot-tall" role="img" aria-label="Foto a confirmar: uso del reloj durante el día"><span>Foto a confirmar</span></div><h3>Durante el día</h3><p>Tecnología que acompaña tu ritmo, en las distintas actividades de la jornada.</p></article>
+          <article>
+            <div class="slot slot-tall" role="img" aria-label="Foto a confirmar: una persona trabajando">
+              <span>Foto a confirmar</span>
+            </div>
+            <h3>Trabajando</h3>
+            <p>Durante la jornada, el reloj queda a mano para ver notificaciones y seguir el día.</p>
+          </article>
+          <article>
+            <div class="slot slot-tall" role="img" aria-label="Foto a confirmar: una persona estudiando">
+              <span>Foto a confirmar</span>
+            </div>
+            <h3>Estudiando</h3>
+            <p>Acompaña las horas de estudio para mantenerse al tanto de lo importante.</p>
+          </article>
+          <article>
+            <div class="slot slot-tall" role="img" aria-label="Foto a confirmar: una persona organizando sus actividades">
+              <span>Foto a confirmar</span>
+            </div>
+            <h3>Organizando actividades</h3>
+            <p>Una forma práctica de ordenar la rutina y consultar la actividad del día.</p>
+          </article>
+          <article>
+            <div class="slot slot-tall" role="img" aria-label="Foto a confirmar: uso del reloj durante el día">
+              <span>Foto a confirmar</span>
+            </div>
+            <h3>Durante el día</h3>
+            <p>Tecnología que acompaña tu ritmo, en las distintas actividades de la jornada.</p>
+          </article>
         </div>
       </div>
     </section>
+
     <section class="section section-alt" id="porque" aria-labelledby="titulo-porque">
       <div class="wrap">
         <p class="kicker">Confianza</p>
         <h2 id="titulo-porque">¿Por qué elegir TIMEFIT?</h2>
         <p class="section-intro">Está pensado para la practicidad de la rutina: organizar el día, consultar notificaciones y mantenerse conectado.</p>
         <ul class="reasons">
-          <li><h3>Diseño moderno</h3><p>Una pieza sobria, alineada con un uso diario y discreto.</p></li>
-          <li><h3>Liviano y cómodo</h3><p>Para llevarlo puesto mientras se trabaja, se estudia o se organiza el día.</p></li>
-          <li><h3>Ideal para tu rutina</h3><p>Acompaña el trabajo, el estudio y el resto de las actividades del día.</p></li>
+          <li>
+            <h3>Diseño moderno</h3>
+            <p>Una pieza sobria, alineada con un uso diario y discreto.</p>
+          </li>
+          <li>
+            <h3>Liviano y cómodo</h3>
+            <p>Para llevarlo puesto mientras se trabaja, se estudia o se organiza el día.</p>
+          </li>
+          <li>
+            <h3>Ideal para tu rutina</h3>
+            <p>Acompaña el trabajo, el estudio y el resto de las actividades del día.</p>
+          </li>
         </ul>
         <h3 class="pending-title">Información comercial pendiente</h3>
         <ul class="pending">
-          <li><span>Garantía</span><strong>A confirmar</strong></li>
-          <li><span>Envío</span><strong>A confirmar</strong></li>
-          <li><span>Medio de pago</span><strong>A confirmar</strong></li>
+          <li>
+            <span>Garantía</span>
+            <strong>A confirmar</strong>
+          </li>
+          <li>
+            <span>Envío</span>
+            <strong>A confirmar</strong>
+          </li>
+          <li>
+            <span>Medio de pago</span>
+            <strong>A confirmar</strong>
+          </li>
         </ul>
       </div>
     </section>
+
     <section class="section" id="contacto" aria-labelledby="titulo-contacto">
       <div class="wrap contact-grid">
         <div>
           <p class="kicker">Contacto y compra</p>
           <h2 id="titulo-contacto">Consultá por el reloj</h2>
           <p class="section-intro">La compra y las consultas se coordinan por WhatsApp.</p>
-          <a class="button is-disabled" data-whatsapp data-label-ready="Consultar por WhatsApp" aria-disabled="true" tabindex="-1"><span data-whatsapp-label>WhatsApp a confirmar</span></a>
+          <a class="button is-disabled" data-whatsapp data-label-ready="Consultar por WhatsApp" aria-disabled="true" tabindex="-1">
+            <span data-whatsapp-label>WhatsApp a confirmar</span>
+          </a>
           <ul class="socials">
-            <li><a data-social="instagram" hidden>Instagram</a><span data-social-pending="instagram">Instagram a confirmar</span></li>
-            <li><a data-social="facebook" hidden>Facebook</a><span data-social-pending="facebook">Facebook a confirmar</span></li>
+            <li>
+              <a data-social="instagram" hidden>Instagram</a>
+              <span data-social-pending="instagram">Instagram a confirmar</span>
+            </li>
+            <li>
+              <a data-social="facebook" hidden>Facebook</a>
+              <span data-social-pending="facebook">Facebook a confirmar</span>
+            </li>
           </ul>
         </div>
         <div class="purchase">
           <h3>Información de compra</h3>
           <dl>
-            <div><dt>Precio</dt><dd data-price>Precio a confirmar</dd></div>
-            <div><dt>Medio de pago</dt><dd>A confirmar</dd></div>
-            <div><dt>Envío</dt><dd>A confirmar</dd></div>
-            <div><dt>Cómo consultar</dt><dd>Por WhatsApp, cuando el número esté cargado en la configuración del sitio.</dd></div>
+            <div>
+              <dt>Precio</dt>
+              <dd data-price>Precio a confirmar</dd>
+            </div>
+            <div>
+              <dt>Medio de pago</dt>
+              <dd>A confirmar</dd>
+            </div>
+            <div>
+              <dt>Envío</dt>
+              <dd>A confirmar</dd>
+            </div>
+            <div>
+              <dt>Cómo consultar</dt>
+              <dd>Por WhatsApp, cuando el número esté cargado en la configuración del sitio.</dd>
+            </div>
           </dl>
         </div>
       </div>
     </section>
   </main>
+
   <footer class="footer">
     <div class="wrap footer-inner">
-      <div><p class="brand-name">TIMEFIT</p><p class="brand-slogan">Conectá con vos</p></div>
+      <div>
+        <p class="brand-name">TIMEFIT</p>
+        <p class="brand-slogan">Conectá con vos</p>
+      </div>
       <nav aria-label="Pie">
         <a href="#producto">Producto</a>
         <a href="#beneficios">Beneficios</a>
@@ -158,7 +289,11 @@
       </nav>
     </div>
   </footer>
-  <div class="mobile-cta"><a class="button" href="#contacto">Consultar</a></div>
+
+  <div class="mobile-cta">
+    <a class="button" href="#contacto">Consultar</a>
+  </div>
+
   <script src="js/config.js"></script>
   <script src="js/main.js"></script>
 </body>
