@@ -65,10 +65,14 @@
   });
 
   document.querySelectorAll("[data-watch]").forEach(function (img) {
-    const light = img.getAttribute("data-watch") === "light";
-    const embedded = light ? window.TIMEFIT_WATCH_LIGHT : window.TIMEFIT_WATCH_DARK;
+    const kind = img.getAttribute("data-watch");
+    const embedded =
+      kind === "light" ? window.TIMEFIT_WATCH_LIGHT :
+      kind === "front" ? window.TIMEFIT_WATCH_FRONT :
+      kind === "detail" ? window.TIMEFIT_WATCH_DETAIL :
+      window.TIMEFIT_WATCH_DARK;
     if (embedded) img.src = embedded;
-    if (!light && window.TIMEFIT_WATCH_MASK) {
+    if (kind === "dark" && window.TIMEFIT_WATCH_MASK) {
       img.style.setProperty("--watch-mask", "url(\"" + window.TIMEFIT_WATCH_MASK + "\")");
     }
   });
