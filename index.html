@@ -64,29 +64,37 @@
       </div>
     </section>
 
-    <section class="section" id="producto" aria-labelledby="titulo-producto">
+    <section class="section section-shop" id="producto" aria-labelledby="titulo-producto">
       <div class="wrap">
-        <p class="kicker">Producto</p>
+        <p class="kicker">Ventas</p>
         <h2 id="titulo-producto">El reloj inteligente TIMEFIT</h2>
-        <div class="product">
-          <div class="gallery">
-            <figure class="gallery-main">
+        <div class="shop-grid">
+          <article class="shop-card">
+            <figure>
               <img src="assets/images/reloj-llamada.png" alt="Smartwatch TIMEFIT, de caja clara y malla negra, mostrando una llamada entrante.">
-              <figcaption>El smartwatch TIMEFIT, con una llamada entrante en pantalla.</figcaption>
             </figure>
-            <div class="gallery-slots" aria-label="Fotos pendientes del producto">
-              <div class="slot" role="img" aria-label="Foto a confirmar: frente del reloj">
-                <span>Foto a confirmar</span>
-                <small>Frente del reloj</small>
-              </div>
-              <div class="slot" role="img" aria-label="Foto a confirmar: detalle del reloj">
-                <span>Foto a confirmar</span>
-                <small>Detalle del reloj</small>
-              </div>
+            <div class="shop-card-bar">
+              <strong>TIMEFIT</strong>
+              <span data-price>Precio a confirmar</span>
             </div>
-          </div>
+          </article>
+          <article class="shop-card shop-card-empty" role="img" aria-label="Foto a confirmar: frente del reloj">
+            <p>Foto a confirmar</p>
+            <div class="shop-card-bar">
+              <strong>Frente del reloj</strong>
+              <span>A confirmar</span>
+            </div>
+          </article>
+          <article class="shop-card shop-card-empty" role="img" aria-label="Foto a confirmar: detalle del reloj">
+            <p>Foto a confirmar</p>
+            <div class="shop-card-bar">
+              <strong>Detalle del reloj</strong>
+              <span>A confirmar</span>
+            </div>
+          </article>
+        </div>
 
-          <div class="product-copy">
+        <div class="product-copy">
             <p>
               TIMEFIT acompaña la rutina. Es una herramienta práctica para organizar mejor el día, consultar notificaciones y mantenerse conectado.
             </p>
@@ -105,7 +113,6 @@
             <a class="button is-disabled" data-whatsapp data-label-ready="Conseguí el tuyo" aria-disabled="true" tabindex="-1">
               <span data-whatsapp-label>WhatsApp a confirmar</span>
             </a>
-          </div>
         </div>
       </div>
     </section>
